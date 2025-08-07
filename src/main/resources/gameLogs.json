@@ -1,0 +1,51 @@
+{
+  "gameStartLogs": [
+    {
+      "timestamp": "2025-04-03T13:41:00",
+      "event": "launcher_started",
+      "details": "El cliente del juego se abrió correctamente."
+    },
+    {
+      "timestamp": "2025-04-03T13:42:00",
+      "event": "user_logged_in",
+      "details": "El usuario inició sesión con éxito."
+    },
+    {
+      "timestamp": "2025-04-03T13:43:00",
+      "event": "game_loaded",
+      "details": "El juego TFT está cargado y listo para iniciar."
+    },
+    {
+      "timestamp": "2025-04-03T13:44:00",
+      "event": "playButton_pressed",
+      "details": "Se presiono el boton de jugar."
+    },
+    {
+      "timestamp": "2025-04-03T13:45:00",
+      "event": "game_mode_selected",
+      "game_mode": "Ranked",
+      "details": "Se selecciono el modo de juego"
+    },
+    {
+      "timestamp": "2025-04-03T13:46:00",
+      "event": "matchmaking_started",
+      "details": "Se inició el proceso de emparejamiento."
+    },
+    {
+      "timestamp": "2025-04-03T13:47:00",
+      "event": "match_found",
+      "details": "Se encontró una partida y se está estableciendo la conexión."
+    },
+    {
+      "timestamp": "2025-04-03T13:48:00",
+      "event": "game_accepted",
+      "coordinates": "x: 31px, y: 32px",
+      "details": "La partida se acepto."
+    },
+    {
+      "timestamp": "2025-04-03T13:49:00",
+      "event": "game_started",
+      "details": "La partida comenzó exitosamente."
+    }
+  ]
+}

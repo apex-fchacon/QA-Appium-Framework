@@ -1,0 +1,41 @@
+{
+  "BenchPositions": {
+    "_comment": "Users that can login the application",
+    "BenchPosition1": {
+      "x": "25.04",
+      "y": "90"
+    },
+    "BenchPosition2": {
+      "x": "31.46",
+      "y": "90"
+    },
+    "BenchPosition3": {
+      "x": "37.87",
+      "y": "90"
+    },
+    "BenchPosition4": {
+      "x": "43.92",
+      "y": "90"
+    },
+    "BenchPosition5": {
+      "x": "49.71",
+      "y": "90"
+    },
+    "BenchPosition6": {
+      "x": "55.92",
+      "y": "90"
+    },
+    "BenchPosition7": {
+      "x": "62.17",
+      "y": "90"
+    },
+    "BenchPosition8": {
+      "x": "68.17",
+      "y": "90"
+    },
+    "BenchPosition9": {
+      "x": "74.375",
+      "y": "90"
+    }
+  }
+}

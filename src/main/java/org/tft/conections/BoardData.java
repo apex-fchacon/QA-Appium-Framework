@@ -3,6 +3,7 @@ package org.tft.conections;
 import java.util.HashMap;
 import java.util.Map;
 
+//TFT exclusive board functionality
 public class BoardData {
     public Map<String, String> BBP1 = new HashMap<String, String>() {{
         put("x","601");

@@ -2,6 +2,7 @@ package appiumtests.pages;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.qameta.allure.Step;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,31 +29,37 @@ public class Login extends Common {
 //    private WebElement btnSigin;
 
 
-
+    @Step("Select Login Type")
     public Login loginWith(String loginType){
+        takeScreenshot("loginWith");
+        eyes.checkWindow("Login Selection");
+        byte[] screenshot = captureScreenshot();
+        attachScreenshot(screenshot);
         switch (loginType) {
             case ("Riot"):
-                clickElement(852, 852);
+                clickElement(35.50, 78.89);
                 break;
             case ("Google"):
-                clickElement(1083, 852);
+                clickElement(45.13, 78.89);
                 break;
             case ("Xbox"):
-                clickElement(1314, 852);
+                clickElement(54.75, 78.89);
                 break;
             case ("Facebook"):
-                clickElement(1545, 852);
+                clickElement(64.38, 78.89);
                 break;
         }
         return this;
     }
 
+    @Step("Puts Username")
     public Login loginAs(String userName){
         try {
             Thread.sleep(10000); // Pausa durante 1000 milisegundos (1 segundo)
         } catch (InterruptedException e) {
             // Manejo de excepciones aquí
         }
+        takeScreenshot("credentials");
 
         WebElement txtUsername = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(0)"));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -63,9 +70,12 @@ public class Login extends Common {
             txtUsername.clear();
         }
         txtUsername.sendKeys(userName);
+        byte[] screenshot = captureScreenshot();
+        attachScreenshot(screenshot);
         return this;
     }
 
+    @Step("Puts Passwords")
     public Login withPassword(String userName){
         try {
             Thread.sleep(5000); // Pausa durante 1000 milisegundos (1 segundo)
@@ -82,9 +92,12 @@ public class Login extends Common {
             txtPassword.clear();
         }
         txtPassword.sendKeys(userName);
+        byte[] screenshot = captureScreenshot();
+        attachScreenshot(screenshot);
         return this;
     }
 
+    @Step("Login the game")
     public Login logIn(){
         try {
             Thread.sleep(2000); // Pausa durante 1000 milisegundos (1 segundo)
@@ -102,6 +115,8 @@ public class Login extends Common {
             preLoading(btnSigIn);
             btnSigIn.clear();
         }
+        byte[] screenshot = captureScreenshot();
+        attachScreenshot(screenshot);
         btnSigIn.click();
         return this;
     }

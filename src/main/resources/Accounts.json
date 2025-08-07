@@ -1,0 +1,9 @@
+{
+  "ValidCredentials": {
+    "_comment": "Users that can login the application",
+    "ferChacon-Account": {
+      "username": "fersh474",
+      "password": "Avengers3.."
+    }
+  }
+}
