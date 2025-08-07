@@ -20,8 +20,8 @@ Mobile test automation framework using Java, Maven, Appium and Cucumber (Gherkin
 
 1. Clone the repository:
    ```
-    git clone https://github.com/Fer474/appiumtestsTFT.git
-    cd appiumtestsTFT
+    https://github.com/apex-fchacon/QA-Appium-Framework.git
+    cd QA-Appium-Framework
    ```
 
 2. Install the dependencies:
