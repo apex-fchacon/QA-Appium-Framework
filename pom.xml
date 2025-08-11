@@ -48,12 +48,6 @@
                         <artifactId>aspectjweaver</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
-                    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
-                    <dependency>
-                        <groupId>io.qameta.allure</groupId>
-                        <artifactId>allure-junit4</artifactId>
-                        <version>${allure.version}</version>
-                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
@@ -67,56 +61,43 @@
             <classifier>standalone</classifier>
         </dependency>
 
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit4-aspect</artifactId>
-            <version>2.29.0</version>
-            <scope>test</scope>
-        </dependency>
-
+        <!-- Allure -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit4-aspect</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-assertj</artifactId>
+        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <!-- Appium y Selenium -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>9.2.3</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.21.0</version>
         </dependency>
 
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.13.2</version>-->
-<!--            <scope>WIP_Features</scope>-->
-<!--        </dependency>-->
 
-
-        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <!-- JSON -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20240303</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.applitools/eyes-appium-java5 -->
-        <dependency>
-            <groupId>com.applitools</groupId>
-            <artifactId>eyes-appium-java5</artifactId>
-            <version>5.75.0</version>
-        </dependency>
-
+        <!-- OpenTelemetry -->
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-api-incubator</artifactId>
@@ -124,38 +105,32 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/com.aspose/aspose-ocr -->
+        <!-- Aspose -->
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-ocr</artifactId>
             <version>24.6.1</version>
         </dependency>
 
+        <!-- Utilities -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version> <!-- Usa la versión más reciente -->
+            <version>2.11.0</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-assertj -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-assertj</artifactId>
-            <version>2.29.0</version>
-        </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
         </dependency>
+
+        <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>compile</scope>
         </dependency>
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -163,36 +138,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core -->
-        <dependency>
-            <groupId>org.deeplearning4j</groupId>
-            <artifactId>deeplearning4j-core</artifactId>
-            <version>1.0.0-M2.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.nd4j/nd4j-native-platform -->
-        <dependency>
-            <groupId>org.nd4j</groupId>
-            <artifactId>nd4j-native-platform</artifactId>
-            <version>1.0.0-M2.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>google-cloud-vertexai</artifactId>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
-        <dependency>
-            <groupId>org.apache.httpcomponents.client5</groupId>
-            <artifactId>httpclient5</artifactId>
-            <version>5.4.3</version>
-        </dependency>
-
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            <!-- BOM de Allure -->
             <dependency>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-bom</artifactId>
@@ -202,9 +152,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.google.cloud</groupId>
-                <artifactId>libraries-bom</artifactId>
-                <version>26.43.0</version>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-bom</artifactId>
+                <version>4.21.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

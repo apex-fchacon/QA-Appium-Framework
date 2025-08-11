@@ -1,6 +1,5 @@
 package appiumtests.pages;
 
-import com.applitools.eyes.appium.Eyes;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
@@ -24,7 +23,6 @@ import java.util.Arrays;
 public class Common {
     AndroidDriver driver = StartConnection.getInstance().getDriver();
     Utils utils = new Utils();
-    Eyes eyes = StartConnection.getInstance().getEyes();
 
 
     public Common(){

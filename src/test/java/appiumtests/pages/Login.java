@@ -32,7 +32,6 @@ public class Login extends Common {
     @Step("Select Login Type")
     public Login loginWith(String loginType){
         takeScreenshot("loginWith");
-        eyes.checkWindow("Login Selection");
         byte[] screenshot = captureScreenshot();
         attachScreenshot(screenshot);
         switch (loginType) {

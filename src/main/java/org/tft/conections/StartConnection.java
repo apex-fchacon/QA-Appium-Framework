@@ -5,19 +5,13 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.*;
 
-import com.applitools.eyes.appium.Eyes;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.options.BaseOptions;
-//import org.json.simple.JSONObject;
-//import org.json.simple.JSONValue;
 
-//import io.appium.java_client.MobileElement;
 import org.junit.runner.Description;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
-//import org.junit.jupiter.api.extension.*;
-//import org.junit.jupiter.api.extension.ExtensionContext.Namespace;
 
 import java.net.URL;
 import java.util.UUID;
